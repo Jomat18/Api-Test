@@ -2,7 +2,7 @@
 
 ### Clonando repositorio
 ``` bash
-git clone http
+git clone https://github.com/Jomat18/Api-Test.git
 cd Api-Test
 ```
 
