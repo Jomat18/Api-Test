@@ -1,4 +1,4 @@
-payload = {
+payload_post = {
     "color": "negro",
     "price": 99,
     "sku": "L4E7S066770",
