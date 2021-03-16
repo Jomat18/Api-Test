@@ -19,11 +19,11 @@ pipenv shell
 ```
 
 ### Instalando dependencias
-Opcion 1. Comando para instalar las dependencias
+Opción 1. Comando para instalar las dependencias
 ``` bash
 pipenv install
 ```
-Opcion 2. Comando para instalar las dependencias
+Opción 2. Comando para instalar las dependencias
 
 ``` bash
 pipenv install -r requirements.txt
@@ -34,7 +34,7 @@ pipenv install -r requirements.txt
 cd request
 ```
 
-### Peticion post: Primer producto
+### Petición post: Primer producto
 ``` bash
 python3 post1.py
 ```
@@ -45,7 +45,7 @@ python3 post1.py
 
 ![Resultados](resultados/L009K2HHM1_.png?raw=true)
 
-### Peticion post: Segundo producto
+### Petición post: Segundo producto
 ``` bash
 python3 post2.py
 ```
@@ -54,7 +54,7 @@ python3 post2.py
 
 ![Resultados](resultados/B1234567.png?raw=true)
 
-### Peticion post: Tercer producto
+### Petición post: Tercer producto
 ``` bash
 python3 post3.py
 ```
@@ -65,17 +65,17 @@ python3 post3.py
 
 ![Resultados](resultados/L4E7S066_.png?raw=true)
 
-### Peticion get
+### Petición get
 ``` bash
 python3 get.py
 ```
 
-### Peticion get_id
+### Petición get_id
 ``` bash
 python3 get_id.py
 ```
 
-### Peticion delete
+### Petición delete
 ``` bash
 python3 delete.py
 ```
