@@ -3,18 +3,6 @@
 # importing librarys
 import requests
 import json 
-import os
-
-# get Token from .env
-#auth_token = os.environ['TOKEN']
-
-# Api-endpoint 
-URL = "https://api.software.madkting.com/shops/1086093/products/"	
-
-headers = {
-	'Authorization': 'Token 1b93d1275a169e1cfbfe04a394b8de793fa58f27',
-    'Content-Type': 'application/json'
-    }    
 
 payload = {
         "color": "negro",
@@ -64,7 +52,13 @@ payload = {
 
 parsed_data = json.dumps(payload)
 
-response = requests.request("POST", URL, headers=headers, data=parsed_data)
+def post2(URL, headers):
 
-print(response.status_code) #201
-print (response.headers)
+  response = requests.request("POST", URL, headers=headers, data=parsed_data)
+
+  if response.status_code != 201:
+    raise ApiError('POST /products/ {}'.format(response.status_code))
+
+  else:
+    print(response.status_code) #201
+    print (response.headers)
